@@ -43,3 +43,33 @@ margin-right: 10px;
 img.dibley {
     max-width: 100%
 }
+
+/* Week 3 - CSS Grid */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr 1fr;
+  grid-template-rows: 130px 110px 70px 90px;
+  gap: 12px;
+  grid-template-areas:
+    "one one one"
+    "two three three"
+    "two four five"
+    "six six six";
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.box1 { grid-area: one; background: #9e3d3f; }
+.box2 { grid-area: two; background: #f3e7b2; }
+.box3 { grid-area: three; background: #9bbf9b; }
+.box4 { grid-area: four; background: #bfe2ff; }
+.box5 { grid-area: five; background: #5c55ff; color: #fff; }
+.box6 { grid-area: six; background: #ff62cf; }
+
+.wrapper div {
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: 2px solid rgba(0,0,0,0.15);
+}
