@@ -47,19 +47,30 @@
     <div id="img"></div>
     <div id="content"></div>
 
-    <script>
-        const user = {
-            name: '',
-            imageUrl: '',
-            bio: ''
-        };
+  <script>
+    const user = {
+        name: 'Rafael Avila',
+        imageUrl: 'images/ghost-guitar.jpg',
+        bio: 'I am Rafael Avila and this website is part of my WEBD-225 coursework. I am learning how HTML, CSS, GitHub, and now React work together to build dynamic web pages. Outside of school and work, I enjoy guitars and learning about different Fender models, which is why I chose this image for my About page.'
+    };
 
-        // Step one - Create a React element
+    // Step 1: Create React elements
+    const heading = React.createElement('h1', null, 'About ' + user.name);
 
-        // Step 2: Render the React element
+    const image = React.createElement('img', {
+        src: user.imageUrl,
+        alt: 'Guitar image',
+        width: 200,
+        height: 200
+    });
 
-    </script>
+    const paragraph = React.createElement('p', null, user.bio);
 
+    // Step 2: Render the React elements
+    ReactDOM.render(heading, document.getElementById('h1'));
+    ReactDOM.render(image, document.getElementById('img'));
+    ReactDOM.render(paragraph, document.getElementById('content'));
+</script>
 </main><!-- /.container -->
 
 <!-- Bootstrap core JavaScript
