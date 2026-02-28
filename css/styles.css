@@ -127,3 +127,46 @@ img.dibley {
 .site-footer p {
   margin: 0;
 }
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  main.container-fluid {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  .home_2col .row {
+    gap: 16px;
+  }
+
+  .home_2col img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
